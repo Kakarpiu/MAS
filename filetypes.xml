@@ -1,0 +1,11 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping pattern="Records.ser" type="PATCH" />
+      <mapping pattern="User Roles" type="PLAIN_TEXT" />
+      <mapping pattern="Header" type="PLAIN_TEXT" />
+      <mapping pattern="Group Creation" type="PLAIN_TEXT" />
+      <mapping pattern="Records" type="PLAIN_TEXT" />
+    </extensionMap>
+  </component>
+</application>
