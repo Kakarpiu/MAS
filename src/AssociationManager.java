@@ -8,7 +8,7 @@ public class AssociationManager {
 
     private static HashSet<AssociationManager> allParts = new HashSet<AssociationManager>();
 
-    private void addAssociation(String roleName, String reverseRoleName, AssociationManager associateObject, Object qualifier, int counter) throws Exception{
+    private void addAssociation(String roleName, String reverseRoleName, AssociationManager associateObject, Object qualifier, int counter) {
         HashMap<Object, AssociationManager> objectAssociations;
         if(counter < 1) return;
 
@@ -23,12 +23,9 @@ public class AssociationManager {
             objectAssociations.put(qualifier, associateObject);
             associateObject.addAssociation(reverseRoleName, roleName, this, this, counter-1);
         }
-        else{
-            throw new Exception("This qualifier is already associated with an object");
-        }
     }
 
-    public void addAssociation(String roleName, String reverseRoleName, AssociationManager associateObject, Object qualifier){
+    public void addAssociation(String roleName, String reverseRoleName, AssociationManager associateObject, Object qualifier) {
         addAssociation(roleName, reverseRoleName, associateObject, qualifier, 2);
     }
 
