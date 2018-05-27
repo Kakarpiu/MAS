@@ -24,10 +24,12 @@ public class Seat extends AssociationManager{
 
     public static Seat createSeat(Theater theater, String row, int number) throws Exception{
         if(theater == null){
-            throw new Exception("Theater doesn't exist");
+            throw new Exception("Theater doesn't exist. Sit cannot be created");
         }
         Seat s = new Seat(theater, row, number);
-        theater.addAssociation("Teatr", "Miejsce", s);
+        theater.addAssociation("Teatr","Miejsce",s,s.toString());
+        theater.addPart("Teatr", "Miejsce",s);
         return s;
     }
+
 }

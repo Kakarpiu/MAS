@@ -1,16 +1,12 @@
 public class Address {
 
     private String streetName;
-    private String streetNumber;
+    private int streetNumber;
     private String postCode;
     private String city;
     private String country;
 
-    public Address(){
-
-    }
-
-    public Address(String streetName, String streetNumber, String postCode, String city, String country){
+    public Address(String streetName, int streetNumber, String postCode, String city, String country){
 
     }
 
@@ -22,11 +18,11 @@ public class Address {
         this.streetName = streetName;
     }
 
-    public String getStreetNumber() {
+    public int getStreetNumber() {
         return streetNumber;
     }
 
-    public void setStreetNumber(String streetNumber) {
+    public void setStreetNumber(int streetNumber) {
         this.streetNumber = streetNumber;
     }
 
