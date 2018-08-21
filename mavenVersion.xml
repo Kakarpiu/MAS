@@ -1,0 +1,3 @@
+<application>
+  <component name="MavenVersion" vmOptions="-Xmx512m" mavenHome="$USER_HOME$/Apache/maven" />
+</application>
